@@ -1,0 +1,184 @@
+/* Fonts */
+@font-face {
+    font-family: 'Kite One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/kiteone/v18/70lQu7shLnA_E02vyp1c4ng.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Satisfy';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/satisfy/v11/rP2Hp2yn6lkG50LoCZOIHQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* latin */
+@font-face {
+    font-family: 'Permanent Marker';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/permanentmarker/v10/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Cfw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+
+/* Universal Styles */
+
+body {
+    font-family: 'Kite One';
+    font-size: 22px;
+    color: #56361E;
+    background-color: #E0B990;
+    opacity: 0.9;
+    text-align: center;
+    margin: 0; /* remove the default margin */
+    padding-top: 10px;
+}
+
+/* Header */
+
+.nav-container {
+   max-height: 50px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   top: 0;
+   border-bottom: 1px solid white;
+   background-color: #E0B990;
+}
+
+.item {
+    padding: 0.5em;
+    color: seashell;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+a:hover {
+      color: #56361E;
+  }
+
+.logo {
+height: 100px;
+width: 100px;
+}
+
+/* Mission */
+
+.mission-container {
+    background-image: url('coffebeans.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    margin: 0px auto;
+    display: flex;
+    width: 100%;
+    position: relative;
+    
+}
+
+.text-cover {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #DEC7B7;
+}
+
+.text-cover > p {
+    font-family: Satisfy;
+    font-size: 40px;
+}
+
+.text-cover > h2 {
+    font-family: 'Permanent Marker';
+    font-size: 85px;
+}
+
+/* Services */
+
+.img-with-txt {
+    text-align: justify;
+    max-width: 1000px;
+    text-align: center;
+    display: inline-flex;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.services img {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 10px 10px;
+}
+
+
+
+/* Roast */
+
+.beans {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.beans h4, p {
+    padding: 0 10px;
+}
+
+.beans img {
+    width: 150px;
+    height: 150px;
+    margin: 5px auto;
+    padding: 10px 10px;
+}
+
+/* Team */
+
+.team-container {
+    background-image: url('coffeshop.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+    padding-top: 5px;
+}
+
+.teammembers {
+    background-color: rgb(246, 241, 238, 0.6);
+    margin: auto;
+    padding: 15px 40px;
+    border-radius: 5%;
+    box-shadow: 1px 1px 40px black;
+}
+.teammembers img {
+    width: 250px;
+    height: 250px;
+    margin: 5px auto;
+    padding: 10px 10px;
+}
+
+.teammembers h3 {
+    text-align: center;
+    opacity: 1;
+}
+
+/* Footer */
+footer{
+    background-color: rgba(246, 241, 238, 0.6);
+    width: 100%;
+    height: 80px;
+    text-align: left;
+    margin-top: 20px;
+  }
